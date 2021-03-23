@@ -82,16 +82,39 @@
 
         <p><span class="section">Abstract</span> </p>
         <p style="font-size:17px;">
-            With multi-speaker text-to-speech (TTS) models synthesizing any target speaker's voice from acoustic reference becoming
-increasingly accurate and the cross-modal association of face and voice proving more and more evident, we examine
-the question to what extent it is possible to predict a target speaker's voice from a face image reference.
-This paper proposes a model architecture combining <i>Tacotron 2</i> multi-speaker TTS with a <i>FaceNet</i> face encoder
-using an intermediate representation based on <i>Global Style Tokens</i> to predict a speaker's voice
-and speaking characteristics from a face image reference. Experimental results show reasonable matching
-ability while retaining better voice naturalness than previous models. We examine these results, compare with other methods, and discuss multiple possible avenues
-of improvement.
+            With multi-speaker text-to-speech (TTS) models synthesizing any target speaker's voice from acoustic
+            reference becoming
+            increasingly accurate and the cross-modal association of face and voice proving more and more evident, we
+            examine
+            the question to what extent it is possible to predict a target speaker's voice from a face image reference.
+            This paper proposes a model architecture combining <i>Tacotron 2</i> multi-speaker TTS with a <i>FaceNet</i>
+            face encoder
+            using an intermediate representation based on <i>Global Style Tokens</i> to predict a speaker's voice
+            and speaking characteristics from a face image reference. Experimental results show reasonable matching
+            ability while retaining better voice naturalness than previous models. We examine these results, compare
+            with other methods, and discuss multiple possible avenues
+            of improvement.
             &nbsp;<br />
         </p>
+        <i>Abstract read by our model:</i>
+        <table>
+            <tr>
+                <td width="33%">
+                    <img src="./robots/qkh.jpg" width="80">
+                </td>
+                <td>
+                    <div>
+                        <audio controls class="audio-player" preload="metadata">
+                            <source src="robots/qkh_reading_abstract.wav" type="audio/wav" />
+                            Does not support </audio>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Face reference</td>
+                <td>Generated audio</td>
+            </tr>
+        </table>
         <br />
         <p><span class="section">Architecture</span> </p>
         <a><img src="images/pipeline.jpg" width="100%" id="architecture" /></a>
@@ -1068,6 +1091,103 @@ of improvement.
   year      = {2020}
 } -->
 </pre>
+
+        <h2>Tests for fun</h2>
+        <table class="demo_table" width="100%" border="0" align="center">
+            <tr>
+                <th class="th_title" width="34%">Nico Robot </th>
+                <th class="th_title" width="34%">Nao Robot</th>
+                <th class="th_title" width="34%">Pepper Robot</th>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/nico.jpg" width="80%" />
+                    </div>
+                </td>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/nao.jpg" width="80%" />
+                    </div>
+                </td>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/pepper.jpg" width="80%" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/nico_resized.jpg" width="160" />
+                    </div>
+                </td>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/nao_resized.jpg" width="160" />
+                    </div>
+                </td>
+                <td>
+                    <div class="centersection">
+                        <img align="center" src="robots/pepper_resized.jpg" width="160" />
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="centersection">Generated Audio:</p>
+                    <div>
+                        <audio controls class="audio-player" preload="metadata">
+                            <source src="robots/nico_voice.wav" type="audio/wav" />
+                            Does not support </audio>
+                    </div>
+                </td>
+                <td>
+                    <p class="centersection">Generated Audio:</p>
+                    <div>
+                        <audio controls class="audio-player" preload="metadata">
+                            <source src="robots/nao_voice.wav" type="audio/wav" />
+                            Does not support </audio>
+                    </div>
+                </td>
+                <td>
+                    <p class="centersection">Generated Audio:</p>
+                    <div>
+                        <audio controls class="audio-player" preload="metadata">
+                            <source src="robots/pepper_voice.wav" type="audio/wav" />
+                            Does not support </audio>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <table width="100%">
+
+            <tr>
+                <td> <a href="https://www.inf.uni-hamburg.de/7617597/nico-faces-1200x300-8f1e971f074ba50bf21ad87180b1b33e79d753c1.jpg">Nico
+                        source</href>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.solidsmack.com/wp-content/uploads/2012/03/aldabaran-nao-robot.jpg">Nao source
+                        </href>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.adweek.com/wp-content/uploads/files/blogs/pepper_robot_hed_2016.jpg">Pepper
+                        source</href>
+
+                </td>
+            </tr>
+        </table>
 
         <h2>Paper</h2>
 
