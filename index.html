@@ -82,37 +82,34 @@
 
         <p><span class="section">Abstract</span> </p>
         <p style="font-size:17px;">
-            With multi-speaker text-to-speech (TTS) models synthesizing any target speaker's voice from acoustic
-            reference becoming
-            increasingly accurate and the cross-modal association of face and voice proving more and more evident, we
-            examine
-            the question to what extent it is possible to predict a target speaker's voice from a face image reference.
-            This paper proposes a model architecture combining <i>Tacotron 2</i> multi-speaker TTS with a <i>FaceNet</i>
-            face encoder
-            using an intermediate representation based on <i>Global Style Tokens</i> to predict a speaker's voice
-            and speaking characteristics from a face image reference. Experimental results show reasonable matching
-            ability while retaining better voice naturalness than previous models. We examine these results, compare
-            with other methods, and discuss multiple possible avenues
-            of improvement.
+            The existence of a learnable cross-modal association between a person's face and their voice is recently becoming more and more evident. 
+This provides the basis for the task of target speaker text-to-speech (TTS) synthesis from face reference.
+In this paper we approach this task by proposing a cross-modal model architecture combining existing unimodal models.
+We use <i>Tacotron 2</i> multi-speaker TTS with speaker embeddings based on <i>Global Style Tokens</i>.
+We transfer learn a <i>FaceNet</i> face encoder to predict these embeddings, and thus predict a speaker's voice
+and speaking characteristics, from a static face image reference. The use of proven and readily available models
+enables quality speech synthesis and a flexible model architecture which can easily be extended. Experimental results show reasonable matching
+ability while retaining better voice naturalness than previous models. We examine these results in comparison with previous methods and discuss multiple possible avenues
+of improvement for future work.
             &nbsp;<br />
         </p>
         <i>Abstract read by our model:</i>
         <table>
             <tr>
                 <td width="33%">
-                    <img src="./robots/qkh.jpg" width="80">
+                    <img src="./robots/3ogs.jpg" width="80">
                 </td>
                 <td>
                     <div>
                         <audio controls class="audio-player" preload="metadata">
-                            <source src="robots/qkh_reading_abstract.wav" type="audio/wav" />
+                            <source src="robots/3ogs_reading_abstract2.wav" type="audio/wav" />
                             Does not support </audio>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>Face reference</td>
-                <td>Generated audio <i>(4.66s or ~7.5x real-time on 1x GTX 1070)</i></td>
+                <td>Generated audio <i>(6.1s or ~7.5x real-time on 1x GTX 1070)</i></td>
             </tr>
         </table>
         <br />
@@ -1191,7 +1188,7 @@
 
         <h2>Paper</h2>
 
-        <a>
+        <!-- <a>
             <div class="thumbs">
                 <img src="images/paper/template_img-1.jpg" width="19%">
                 <img src="images/paper/template_img-2.jpg" width="19%">
@@ -1199,7 +1196,7 @@
                 <img src="images/paper/template_img-4.jpg" width="19%">
                 <img src="images/paper/template_img-5.jpg" width="19%">
             </div>
-        </a>
+        </a> -->
 
 
     </div>
