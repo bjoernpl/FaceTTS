@@ -84,12 +84,12 @@
         <p style="font-size:17px;">
             The existence of a learnable cross-modal association between a person's face and their voice is recently becoming more and more evident. 
 This provides the basis for the task of target speaker text-to-speech (TTS) synthesis from face reference.
-In this paper we approach this task by proposing a cross-modal model architecture combining existing unimodal models.
+In this paper, we approach this task by proposing a cross-modal model architecture combining existing unimodal models.
 We use <i>Tacotron 2</i> multi-speaker TTS with speaker embeddings based on <i>Global Style Tokens</i>.
-We transfer learn a <i>FaceNet</i> face encoder to predict these embeddings, and thus predict a speaker's voice
-and speaking characteristics, from a static face image reference. The use of proven and readily available models
-enables quality speech synthesis and a flexible model architecture which can easily be extended. Experimental results show reasonable matching
-ability while retaining better voice naturalness than previous models. We examine these results in comparison with previous methods and discuss multiple possible avenues
+We transfer learn a <i>FaceNet</i> face encoder to predict these embeddings from a static face image reference and thus predict a speaker's voice
+and speaking characteristics. The use of proven and readily available models
+enables quality speech synthesis and a flexible model architecture that can easily be extended. Experimental results show good matching
+ability while retaining better voice naturalness than previous models. We examine these results compared to previous methods and discuss multiple possible avenues
 of improvement for future work.
             &nbsp;<br />
         </p>
@@ -109,7 +109,7 @@ of improvement for future work.
             </tr>
             <tr>
                 <td>Face reference</td>
-                <td>Generated audio <i>(6.1s or ~7.5x real-time on 1x GTX 1070)</i></td>
+                <td>Generated audio <i>in 5.93s or ~7.5x real-time on 1x GTX 1070</i></td>
             </tr>
         </table>
         <br />
