@@ -62,8 +62,7 @@
         <br />
 
         <p><span class="venue">INTERSPEECH 2021</span></p>
-        <p><span class="title">Target Speaker Text-to-Speech Synthesis from a Face Image Reference using Global Style
-                Token Embedding</span></p>
+        <p><span class="title">Hearing Faces: Target Speaker Text-to-Speech Synthesis from a Face</span></p>
         <br />
         <table border="0" align="center" class="authors">
             <tr align="center" valign="bottom">
@@ -85,11 +84,14 @@
             The existence of a learnable cross-modal association between a person's face and their voice is recently becoming more and more evident. 
 This provides the basis for the task of target speaker text-to-speech (TTS) synthesis from face reference.
 In this paper, we approach this task by proposing a cross-modal model architecture combining existing unimodal models.
-We use <i>Tacotron 2</i> multi-speaker TTS with speaker embeddings based on <i>Global Style Tokens</i>.
-We transfer learn a <i>FaceNet</i> face encoder to predict these embeddings from a static face image reference and thus predict a speaker's voice
-and speaking characteristics. The use of proven and readily available models
-enables quality speech synthesis and a flexible model architecture that can easily be extended. Experimental results show good matching
-ability while retaining better voice naturalness than previous models. We examine these results compared to previous methods and discuss multiple possible avenues
+We use <i>Tacotron 2</i> multi-speaker TTS with auditory speaker embeddings based on <i>Global Style Tokens</i>.
+We transfer learn a <i>FaceNet</i> face encoder to predict these embeddings from a static face image reference instead of a voice reference
+and thus predict a speaker's voice and speaking characteristics from their face. 
+Unlike <i>Face2Speech</i>, the only previous work on this task, we use pretrained and openly available
+models. This approach enables high-quality speech synthesis and allows for an easily extensible model architecture.
+Experimental results show good matching
+ability while retaining better voice naturalness than <i>Face2Speech</i>.
+We examine the limitations of our model and discuss multiple possible avenues
 of improvement for future work.
             &nbsp;<br />
         </p>
@@ -102,14 +104,14 @@ of improvement for future work.
                 <td>
                     <div>
                         <audio controls class="audio-player" preload="metadata">
-                            <source src="robots/3ogs_reading_abstract2.wav" type="audio/wav" />
+                            <source src="robots/3ogs_reading_abstract3.wav" type="audio/wav" />
                             Does not support </audio>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>Face reference</td>
-                <td>Generated audio <i>in 5.93s or ~7.5x real-time on 1x GTX 1070</i></td>
+                <td>Generated audio <i>in 6.6s or ~7.6x real-time on 1x GTX 1070</i></td>
             </tr>
         </table>
         <br />
